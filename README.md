@@ -1,6 +1,6 @@
-**Title:** Dimension Reduction of Complex Structured Data in UK Biobank with Autoencoders
+## Dimension Reduction of Complex Structured Data in UK Biobank with Autoencoders
 
-**Description:**
+### Description
 This project focuses on the fundamental problem of the large number and complexity of variables in the UK Biobank, a massive prospective study of disease.  UK Biobank has data on 500,000 individuals, comprised of measurement on 1000’s of different variables.  A number of important variables have are tree-valued, as is the case for “ICD-10” variables.  ICD-10 is a standard system established by the WHO to encode every possible diagnosis or disease.  Every time a UK Biobank subject has an in- or out-patient visit to hospital, one or more ICD-10 codes are recorded. 
 
 However, ICD-10 is a tree-valued variable.  For example, a diagnosis of “Rheumatoid arthritis” (M05.3) is a leaf at the end of the tree:
@@ -28,46 +28,49 @@ This project can act as a foundation for a DPhil, which may include:
 
 Data availability: Profs. Smith and Nichols both have existing access to the UK Biobank data, imaging and extensive behavioural and demographic variables.
 
-**References:**
+### References:
 
 1. S.V.N. Vishwanathan and A.J. Smola. [Fast kernels on strings and trees.](https://www.stat.purdue.edu/~vishy/papers/VisSmo02.pdf) In Proceedings of Neural Information Processing Systems (NIPS), 2003.  
 2. Laforgue, P., Clémençon, S., & d’Alché-Buc, F. (2018). [Autoencoding any Data through Kernel Autoencoders.](http://proceedings.mlr.press/v89/laforgue19a/laforgue19a.pdf)  
 3. Irsoy, O., & Alpaydin, E. (2015). [Autoencoder trees.](http://proceedings.mlr.press/v45/Irsoy15.pdf) ACML 2015 - 7th Asian Conference on Machine Learning, (section 2), 378–390.
 
+---
 
 ## Concise summary of the project
 
 1. Review UK Biobank project and specifically motivation of imaging/non-imaging associations; review ICD10 & tree-structured data; review methods for data reduction on tree-structured data
-2. Devise simulations using real UK Biobank data, and evaluate different approaches to data reduction, their effectiveness for detecting interpretable structure.
+2. Devise [simulations](#Simulations) using real UK Biobank data, and evaluate different approaches to data reduction, their effectiveness for detecting interpretable structure.
 3. Apply to real data, compare ICD10 dimension reduction methods on 'positive control' prediction or association exercises, like with age.
 
-### Background reading for presentation
+## Motivation for project
+
+CCA-ICA results in Fig 7 depend on a PCA dimension reduction on tabular data, and the concern is that PCA is not a great mechanism for summarising the ICD10 data (here, the ICD10 data was one-hot encoded at the leaf-level, though most of the resulting 19,154 columns were dropped after a sparsity check).
+
+## Simulations
+
+> You could simulate 'noise' data (i.e. random occurrence over the 19,154 diagnoses), and you could simulate 'signal' data for (say) cerebrovascular (I60-I69), where everyone has some leaf with that category, and then for varying mixtures of 'noise' and 'signal' data, can a dimension reduction method sniff out the signal from the noise.
+
+## Suggested reading
+
+#### Background reading for presentation
 
 > Overview of the Biobank and the ICD10 data structure... a few figures from [Cortes et al (2017) Nature Genetics, 49(9):1311–1318](https://www.ncbi.nlm.nih.gov/pubmed/28759005) may be enough to motivate things.  If you are able to do *any* exploration of ICD10 even better.
 
-### UK Biobank and the imaging data context
+#### UK Biobank and the imaging data context
 
 - Miller, K. L., Alfaro-Almagro, F., Bangerter, N. K., Thomas, D. L., Yacoub, E., Xu, J., … Smith, S. M. (2016). [Multimodal population brain imaging in the UK Biobank prospective epidemiological study.](https://doi.org/10.1038/nn.4393) Nature Neuroscience, 19(11), 1523–1536.
 
-### Other reading
+#### Other reading
 
 - PCA
 - CCA
 - ICA
 
-### Motivation for project
-
-CCA-ICA results in Fig 7 depend on a PCA dimension reduction on tabular data, and the concern is that PCA is not a great mechanism for summarising the ICD10 data (here, the ICD10 data was one-hot encoded at the leaf-level, though most of the resulting 19,154 columns were dropped after a sparsity check).
-
-### Autoencoders
+#### Autoencoders
 
 - http://www.deeplearningbook.org/contents/autoencoders.html
 
-### Kernal PCA
+#### Kernal PCA
 
 - Section 12.3 of [Bishop's book](http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf)
 - https://medium.com/@ODSC/implementing-a-kernel-principal-component-analysis-in-python-495f04a7f85f
-
-### Simulations
-
-> You could simulate 'noise' data (i.e. random occurrence over the 19,154 diagnoses), and you could simulate 'signal' data for (say) cerebrovascular (I60-I69), where everyone has some leaf with that category, and then for varying mixtures of 'noise' and 'signal' data, can a dimension reduction method sniff out the signal from the noise.
