@@ -29,7 +29,7 @@
 
 ### Graph Autoencoders
 
-- ...
+- [Keep It Simple: Graph Autoencoders Without Graph Convolutional Networks](https://arxiv.org/abs/1910.00942) (2019)
 
 ### Dimension reduction on graph / tree data points
 
