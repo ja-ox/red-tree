@@ -1,2 +1,4 @@
 theme: jekyll-theme-minimal
 logo: /assets/images/icd10_radial_tree.png
+toc: true
+has_toc: true
