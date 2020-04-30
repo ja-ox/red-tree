@@ -1,8 +1,3 @@
 theme: jekyll-theme-minimal
 logo: /assets/images/icd10_radial_tree.png
-toc: true
-has_toc: true
-header_pages:
- - /pages/dimension_reduction.md
- - /pages/project_description.md	
- - /pages/research_questions.md
+navigation: True
