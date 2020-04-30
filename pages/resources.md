@@ -8,7 +8,7 @@
 
 - [Network Embedding: An Overview](https://arxiv.org/abs/1911.11726) (2019)
   >  The advantage of node embedding as a technique is that it does not require feature engineering by domain experts.
-
+- [A Short Tutorial on Graph Laplacians, Laplacian Embedding, and Spectral Clustering](https://csustan.csustan.edu/~tom/Clustering/GraphLaplacian-tutorial.pdf)
 - https://paperswithcode.com/task/network-embedding
 - [To Embed or Not: Network Embedding as a Paradigm in Computational Biology](https://www.frontiersin.org/articles/10.3389/fgene.2019.00381/full) (2019)
 - [Graph-adaptive Nonlinear Dimensionality Reduction](https://arxiv.org/pdf/1801.09390.pdf) (Kernel-PCA on graphs)
