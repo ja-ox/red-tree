@@ -3,12 +3,12 @@
 - title: Home
   url: /
 
-- title: Group of Things
-  url: /group/
+- title: More Info
+  url: /pages/
   sublinks:
-    - title: Sub-item 1
-      url: /group/si1
-    - title: Sub-item 2
-      url: /group/si2
-    - title: Sub-item 3
-      url: /group/si3
+    - title: Project Description
+      url: /project_description.md	
+    - title: Research Questions
+      url: /research_questions.md
+    - title: Dimension Reduction
+      url: /dimension_reduction.md
