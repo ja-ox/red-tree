@@ -4,10 +4,14 @@
   url: /
 - title: Project Description
   url: /pages/project_description	
-#  sublinks:
-#    - title: More info
-#      url:
 - title: Research Questions
   url: /pages/research_questions
 - title: Dimension Reduction
   url: /pages/dimension_reduction
+- title: Resources
+  url: /pages/resources
+- title: Problem Statement
+  url: /pages/problem_statement
+  #  sublinks:
+#    - title: More info
+#      url:
