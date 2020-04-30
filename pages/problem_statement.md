@@ -13,6 +13,7 @@ How do we, given this tree data for each patient, sensibly perform dimension red
 ![](https://miro.medium.com/max/1032/1*qrfDH1woi77HSuzOq7ymmA.png)
 
 - **Idea 2:** Sum all data points, i.e. one tree with nodes weighted by disease presence across population.
+- **Idea 3:** Combine tree-structure and comorbidity structure. ICD-10 is base level connectivity, add normalised weighted edges by comorbid. If only using comorbidiities, lose information from mutually exclusive similar diseases. Need to combine both.
 
 ---
 
