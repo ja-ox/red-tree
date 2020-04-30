@@ -40,15 +40,19 @@ However, little literature on when each individual datapoint is a graph.
 - [Dimension Reduction in Principal Component Analysis for Trees](https://arxiv.org/abs/1202.2371) (PCA on trees)
 - [Tree distance metrics](https://cran.r-project.org/web/packages/Quartet/vignettes/Tree-distance-metrics.pdf) (measures distance between different structured trees)
 
-**multi-level categorical variable / Categorical regressor / shrinkage / fusion**
+#### multi-level categorical variable / Categorical regressor / shrinkage / fused lasso
 
-Multi-level refers to multiple children. Hierarchical for multiple *generations*?
+(Multi-level refers to multiple children)
 
 - https://stats.stackexchange.com/questions/146907/principled-way-of-collapsing-categorical-variables-with-many-levels
 - https://stats.stackexchange.com/questions/227125/preprocess-categorical-variables-with-many-values/277302#277302
 - https://stats.stackexchange.com/questions/349513/variable-selection-with-tree-structured-covariates
 - [A Note on Coding and Standardization of Categorical Variables in (Sparse) Group Lasso Regression](https://arxiv.org/abs/1805.06915)
 - [Elements of Statistical Learning](http://www-stat.stanford.edu/~tibs/ElemStatLearn/) (p.329)
+
+#### Hierarchical clustering ✔️
+
+- [Hierarchical clustering algorithm for categorical data using a probabilistic rough set model](https://www.sciencedirect.com/science/article/abs/pii/S0950705114001300) (2014)
 - https://en.wikipedia.org/wiki/Cluster_analysis
 - https://en.wikipedia.org/wiki/Numerical_taxonomy
 
@@ -76,3 +80,4 @@ Hierarchical clustering of tree (3.6):
 ### Nichols
 
 - https://git.fmrib.ox.ac.uk/fsl/funpack
+- https://git.fmrib.ox.ac.uk/fsl/funpack/-/tree/master/funpack%2Fdata%2Fhierarchy (19 or 2, biggest files)
