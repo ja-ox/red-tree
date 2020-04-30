@@ -12,6 +12,7 @@
 - https://paperswithcode.com/task/network-embedding
 - [To Embed or Not: Network Embedding as a Paradigm in Computational Biology](https://www.frontiersin.org/articles/10.3389/fgene.2019.00381/full) (2019)
 - [Graph-adaptive Nonlinear Dimensionality Reduction](https://arxiv.org/pdf/1801.09390.pdf) (Kernel-PCA on graphs)
+- https://jlmelville.github.io/smallvis/spectral.html
 
 ### Graph Neural Networks (GNN)
 
