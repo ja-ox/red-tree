@@ -10,10 +10,9 @@
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
-    
-{% include navigation.html %}
 
   </head>
+  
   <body>
     <div class="wrapper">
       <header>
@@ -40,6 +39,9 @@
           <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
         </ul>
         {% endif %}
+        
+        {% include navigation.html %}
+        
       </header>
       <section>
 
