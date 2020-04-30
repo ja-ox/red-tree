@@ -2,15 +2,12 @@
 
 - title: Home
   url: /
- 
 - title: Project Description
   url: /pages/project_description.md	
-  sublinks:
-    - title: More info
-      url:
- 
+#  sublinks:
+#    - title: More info
+#      url:
 - title: Research Questions
   url: /pages/research_questions.md
-
 - title: Dimension Reduction
   url: /pages/dimension_reduction.md
