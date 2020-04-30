@@ -1,7 +1,3 @@
-# Project RedTree
-
-##### Dimension Reduction of Tree-structured data
-
 **Title:** Dimension Reduction of Complex Structured Data in UK Biobank with Autoencoders
 
 **Description:**
