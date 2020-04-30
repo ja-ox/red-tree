@@ -3,11 +3,11 @@
 - title: Home
   url: /
 - title: Project Description
-  url: /pages/project_description.md	
+  url: /pages/project_description	
 #  sublinks:
 #    - title: More info
 #      url:
 - title: Research Questions
-  url: /pages/research_questions.md
+  url: /pages/research_questions
 - title: Dimension Reduction
-  url: /pages/dimension_reduction.md
+  url: /pages/dimension_reduction
