@@ -12,6 +12,8 @@
   url: /pages/resources
 - title: Problem Statement
   url: /pages/problem_statement
+- title: Notes
+  url: /pages/notes
 - title: Data
   url: /pages/icd10_tree
   #  sublinks:
