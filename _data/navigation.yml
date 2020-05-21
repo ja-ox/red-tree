@@ -16,6 +16,8 @@
   url: /pages/notes
 - title: Data
   url: /pages/icd10_tree
+- title: Visualisations
+  url: /pages/visualisations
   #  sublinks:
 #    - title: More info
 #      url:
