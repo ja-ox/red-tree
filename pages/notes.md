@@ -92,10 +92,11 @@
 >   - create disease x disease similarity matrix (specific similarity/distance measure parameterised - many options, no canonical answer):
 >      -  `‘braycurtis’, ‘canberra’, ‘chebyshev’, ‘cityblock’, ‘correlation’, ‘cosine’, ‘dice’, ‘euclidean’, ‘hamming’, ‘jaccard’, ‘jensenshannon’, ‘kulsinski’, ‘mahalanobis’, ‘matching’, ‘minkowski’, ‘rogerstanimoto’, ‘russellrao’, ‘seuclidean’, ‘sokalmichener’, ‘sokalsneath’, ‘sqeuclidean’, ‘yule’`
 >   - Plot heatmap of similarities
->- Todo:
 >   - Extract edges from matrix
->   - Plot edges individually
->   - Plot edges combined with ICD-10
+>   - Generate graph from edges individually
+>   - Generate graph from edges combined with ICD-10 edges
+>- Todo:
+>   - Adapt earlier visualisation code to plot new graphs
 >   - Perform clustering on both representations
 >   - Given e.g. [Similarity Network Fusion (SNF) paper](https://www.nature.com/articles/nmeth.2810) (http://compbio.cs.toronto.edu/SNF/SNF/Software.html), consider:
 >        - unweighted edges (with incidence thresholded by some similarity score) vs 
