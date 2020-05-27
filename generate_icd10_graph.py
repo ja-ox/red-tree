@@ -69,10 +69,9 @@ def main(plot_subtrees, prog='twopi', save_fig=True):
     
     return G, pos, df
 
-def plot_plotly(G, pos, df):
+def plot_plotly(G, pos, df, similarity_edges=None, similarities=False):
     
-    # Node positions
-    
+    # Edge positions
     edge_x = []
     edge_y = []
     for edge in G.edges():
@@ -84,12 +83,29 @@ def plot_plotly(G, pos, df):
         edge_y.append(y0)
         edge_y.append(y1)
         edge_y.append(None)
-    
+        
+    # Labels
+    node_dict = df[['coding','node_id']].set_index('coding').to_dict()
+    node_dict['node_id'][0] = '' # Adding root label
+        
+    if similarities:
+        for edge in similarity_edges:
+            x0, y0 = G.nodes[node_dict['node_id'][edge[0]]]['pos']
+            x1, y1 = G.nodes[node_dict['node_id'][edge[1]]]['pos']
+            edge_x.append(x0)
+            edge_x.append(x1)
+            edge_x.append(None)
+            edge_y.append(y0)
+            edge_y.append(y1)
+            edge_y.append(None)
+        
     edge_trace = go.Scatter(
         x=edge_x, y=edge_y,
         line=dict(width=0.5, color='#888'),
         hoverinfo='none',
         mode='lines')
+    
+    # Node positions
     
     node_x = []
     node_y = []
@@ -120,12 +136,15 @@ def plot_plotly(G, pos, df):
             ),
             line_width=2))
     
+    
+    
     # Labels
     label_dict = df[['node_id','coding']].set_index('node_id').to_dict()
     label_dict['coding'][0] = '' # Adding root label
     node_text = [label_dict['coding'][node] for node in G.nodes()]
     node_trace.text = node_text
     
+    # Colourings
     node_adjacencies = []
     for adjacencies in G.adjacency():
         node_adjacencies.append(len(adjacencies[1]) - 1)
@@ -162,4 +181,4 @@ if __name__ == "__main__":
     for n, p in pos.items():
         G.node[n]['pos'] = p
         
-    fig = plot_plotly(G, pos, df)
+    fig = plot_plotly(G, pos, df, similarities=True, similarity_edges=similarity_edges)
