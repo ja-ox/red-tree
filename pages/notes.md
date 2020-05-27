@@ -106,3 +106,13 @@
 >   - [Circle graph](https://en.wikipedia.org/wiki/Circle_graph#Chromatic_number)? Could have radial ICD-10 tree, and 'chordal' edges from multimorbidities (similarities).
 
 ![circle graph example](https://upload.wikimedia.org/wikipedia/commons/3/3f/Ageev_5X_circle_graph.svg)
+
+### Week 4
+
+#### Q's
+
+#### A's
+
+>- What similarity measure to use? https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.DistanceMetric.html  
+    "Metrics intended for boolean-valued vector spaces:"
+     - For our problem, when considering disease x disease (where each element in the disease vector corresponds to a patient), we do not care about instances where patients had neither disease - we are interested in comorbidity status, i.e. how often both disease co-occur vs how often only one does. i.e. NTT/NNZ But this is a similarity metric, and the inverse is not a default distance metric in SKLearn, so we consult other ones which involve NTT in the denominator (for ditance) i.e. dice and sokalsneath (jaccard problematic - why?)
