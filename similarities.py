@@ -102,6 +102,11 @@ print(f'   0 : {len(np.argwhere(up_tri == 0))}')
 
 edges = [(cols[i], cols[j]) for i, j in np.argwhere(up_tri == 0)]
 
+import pickle
+
+with open(r'C:\Users\Jacob\Downloads\autoencoders\data\similarity_edges.txt', 'wb') as fp:
+    pickle.dump(edges, fp)
+
 # Create graph
 
 
