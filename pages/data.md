@@ -10,4 +10,6 @@ We can also represent the relationships between diseases determined by a disease
 
 Or we can combine these:
 
-[Hybrid graph](/red-tree/pages/icd10_tree_sims.html)
+[Hybrid graph](/red-tree/pages/icd10_tree_sims.html) (tree)
+
+[Hybrid graph](/red-tree/pages/hybrid_plot.html) (repulsion)
