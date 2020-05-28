@@ -6,7 +6,7 @@ We can, using the pure ICD-10 Structure, create an graph representation of the r
 
 We can also represent the relationships between diseases determined by a disease x disease pairwise similarity measure applied to the data:
 
-[Similarities]()
+[Similarities](/red-tree/pages/similarities.html)
 
 Or we can combine these:
 
